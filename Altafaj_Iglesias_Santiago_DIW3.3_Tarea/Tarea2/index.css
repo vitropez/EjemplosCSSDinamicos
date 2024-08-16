@@ -1,0 +1,68 @@
+div{
+    width:50px;
+    height: 50px;
+   
+}
+#caja1{
+    background-color:blue;
+    animation: Derecha 3s  6 alternate;
+   
+}
+#caja2{
+    position: relative;
+    top: 15px;
+    background-color: red;
+    right:55px;
+    animation: Abajo 3s  6 alternate;
+} 
+#caja3{
+    position: relative;
+    top: 20px;
+    right: 110px;
+    transform: rotate(50deg);
+    background-color: violet;
+    animation: Rotado 3s 6 alternate;
+    transform-origin:center;
+   
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@keyframes Rotado {
+
+        0%{
+            transform: rotate(50deg) translate(0px, 0px);
+        }
+    100%{
+        transform: rotate(50deg) translate(0px, 200px);
+        
+       
+   
+}
+}
+@keyframes Abajo {
+    0%{
+        transform: translate(0px, 0px);
+    }
+100%{
+    transform:  translate(0px, 200px);
+    
+}
+}
+@keyframes Derecha {
+    0%{
+        transform: translate(0px, 0px);
+    }
+100%{
+    transform:  translate(200px, 0px);
+    
+}
+    
+}

@@ -1,0 +1,46 @@
+div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: red;
+    animation: MiAnimacion 10s 3 alternate;
+
+}
+
+@keyframes MiAnimacion {
+
+    0% {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+
+    25% {
+        margin-top: 0%;
+        margin-left: 40%;
+        background-color: yellow
+    }
+
+    50% {
+        margin-left: 40%;
+        margin-top: 40%;
+        background-color: blue;
+
+
+
+    }
+
+    75% {
+        margin-top: 40%;
+        margin-left: 0%;
+        background-color: green;
+    }
+
+    100% {
+        margin-left: 0%;
+        margin-top: 0%;
+        background-color: red;
+    }
+
+
+}
